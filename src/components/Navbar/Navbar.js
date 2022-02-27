@@ -10,6 +10,7 @@ const Logo = () => {
   return (
     <div className='logo'>
       <h2>Hugh Sinclair</h2>
+      <h4 className='desktop-resume-link'><a href="">My resume</a></h4>
     </div>
   );
 }

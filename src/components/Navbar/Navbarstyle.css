@@ -75,6 +75,9 @@ li {
         height: 90px;
         padding-bottom: 10px;
     }
+    .desktop-resume-link {
+        display: none;
+    }
     .link-text {
         display: none;
     }

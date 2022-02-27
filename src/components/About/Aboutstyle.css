@@ -1,9 +1,10 @@
 h1, h2 {
     color: whitesmoke;
 }
-.skills-ul{
+.skills-ul, .skills-title, .resume-title {
     text-align: center;
 }
+
 
 .about-me {
     display: flex;
@@ -23,10 +24,24 @@ h1, h2 {
     background-color: #23acfd;
     padding-top: 60px;
 }
+.scroll-down {
+    text-align: center;
+    padding-top: 60px;
+}
 
 @media only screen and (max-width: 600px) {
     .about-container{
         padding-top: 85px;
         height: calc(100vh + 80px);
+    }
+    .resume-title {
+        padding-top: 20px;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .resume-title {
+        display: none;
     }
 }

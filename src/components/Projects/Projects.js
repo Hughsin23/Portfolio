@@ -3,6 +3,7 @@ import safeHavenImg from '../../safehaven.png'
 import ticTacToeImg from '../../tictactoe.png'
 import showUsYourQuackImg from '../../quack.png'
 import './ProjectsStyle.css'
+import {Icon} from '@iconify/react'
 
 
 export default function Projects() {
@@ -17,8 +18,8 @@ export default function Projects() {
                 speed={2.5}
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',  }}>
                 <img className="tictactoe-img" src={ticTacToeImg} alt="" />
-                <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
-                <p className="project-p">Scroll down for more v</p>
+                <p className="project-p">Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
+                <p className="project-p">Scroll down for more <Icon icon="akar-icons:arrow-down" color="white" /></p>
                 </ParallaxLayer>
 
                 
@@ -36,7 +37,8 @@ export default function Projects() {
                     
                 }}>
                     <img src={showUsYourQuackImg} alt="" />
-                    <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Show us your Quack! A duckspotting CRUD app! Try it <a target="_blank" href="https://show-us-your-quack.herokuapp.com/">here</a></p>
+                    <p className="project-p">Show us your Quack! A duckspotting CRUD app! Try it <a target="_blank" href="https://show-us-your-quack.herokuapp.com/">here</a></p>
+                    <p className="project-p">Scroll down for more <Icon icon="akar-icons:arrow-down" color="white" /></p>
                 </ParallaxLayer>
 
                 <ParallaxLayer
@@ -51,9 +53,13 @@ export default function Projects() {
                     backgroundColor: '#3044FA'
                 }}>
                 <img className="safehaven-img" src={safeHavenImg} alt="" />
-                <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Group project: Safehaven, a full stack safety app for women. Try it <a target="_blank" href="https://safe-haven-app.herokuapp.com/">here</a></p>
+                <p className="project-p" >Group project: Safehaven, a full stack safety app for women. Try it <a target="_blank" href="https://safe-haven-app.herokuapp.com/">here</a></p>
                 </ParallaxLayer>
             </Parallax>
+            </div>
+            <div className='scroll-down-grid'>
+                <h2 className='scroll-down'>My details<Icon icon="akar-icons:arrow-down" color="white" />
+                </h2>
             </div>
         </div>
     )

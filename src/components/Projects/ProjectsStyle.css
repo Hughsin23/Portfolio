@@ -14,6 +14,11 @@
     position: relative;
 }
 
+.scroll-down-grid {
+    grid-row: 3 / 4;
+    grid-column: -3 / -2;
+}
+
 .project-parallax {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -38,7 +43,7 @@ img {
     border-radius: 10px;
 }
 .safehaven-img {
-    width: 14vw;
+    width: 19vw;
     border-radius: 10px;
 }
 
@@ -48,6 +53,15 @@ p > a {
 }
 .tictactoe-img {
     width: 40vw;
+}
+
+.project-p {
+    border-radius: 10px;
+    width: 300px;
+    background-color: #4120e3;
+    color: white;
+    text-align: center; 
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
