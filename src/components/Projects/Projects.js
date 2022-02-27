@@ -4,9 +4,14 @@ import ticTacToeImg from '../../tictactoe.png'
 import showUsYourQuackImg from '../../quack.png'
 import './ProjectsStyle.css'
 import {Icon} from '@iconify/react'
+import Flipcard from "../project_flipcards/Flipcards.js"
+
+
 
 
 export default function Projects() {
+
+    var tictactoeStack = ["HTML", "CSS", "JS"]
 
     return (
         <div className="project-container">
@@ -17,9 +22,10 @@ export default function Projects() {
                 offset={0}
                 speed={2.5}
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',  }}>
-                <img className="tictactoe-img" src={ticTacToeImg} alt="" />
+                <Flipcard imgUrl={"../../tictactoe.png"} projectName={"TicTacToe"} projectStack={tictactoeStack}/>
+                {/* <img className="tictactoe-img" src={ticTacToeImg} alt="" />
                 <p className="project-p">Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
-                <p className="project-p">Scroll down for more <Icon icon="akar-icons:arrow-down" color="white" /></p>
+                <p className="project-p">Scroll down for more <Icon icon="akar-icons:arrow-down" color="white" /></p> */}
                 </ParallaxLayer>
 
                 
