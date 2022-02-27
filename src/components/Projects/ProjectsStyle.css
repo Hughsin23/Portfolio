@@ -34,12 +34,11 @@
 }
 
 img {
-    width: 60%;
+    width: 60vw;
     border-radius: 10px;
 }
-.safehaven-pic {
-    height: 90%;
-    width: 30%;
+.safehaven-img {
+    width: 14vw;
     border-radius: 10px;
 }
 
@@ -52,4 +51,22 @@ p {
 }
 p > a {
     text-decoration: underline;
+}
+.tictactoe-img {
+    width: 40vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .tictactoe-img {
+        width: 60vw;
+    }
+    .safehaven-img {
+        width: 55vw;
+        border-radius: 10px;
+    }
+}
+@media only screen and (min-width: 1500px){
+    .tictactoe-img {
+        width: 35vw;
+    }
 }

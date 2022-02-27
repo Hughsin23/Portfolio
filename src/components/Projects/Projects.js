@@ -7,8 +7,6 @@ import './ProjectsStyle.css'
 
 export default function Projects() {
 
-
-
     return (
         <div className="project-container">
             <div className="projects-carousel">
@@ -18,8 +16,8 @@ export default function Projects() {
                 offset={0}
                 speed={2.5}
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',  }}>
-                <img src={ticTacToeImg} alt="" />
-                <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>First ever project: Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
+                <img className="tictactoe-img" src={ticTacToeImg} alt="" />
+                <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
                 </ParallaxLayer>
 
                 
@@ -51,7 +49,7 @@ export default function Projects() {
                     flexDirection: 'column',
                     backgroundColor: '#3044FA'
                 }}>
-                <img className="safehaven-pic" src={safeHavenImg} alt="" />
+                <img className="safehaven-img" src={safeHavenImg} alt="" />
                 <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Group project: Safehaven, a full stack safety app for women. Try it <a target="_blank" href="https://safe-haven-app.herokuapp.com/">here</a></p>
                 </ParallaxLayer>
             </Parallax>

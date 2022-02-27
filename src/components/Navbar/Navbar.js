@@ -13,9 +13,7 @@ const linkStyle = {
 const Logo = () => {
   return (
     <div className='logo'>
-      <h2>My stuff</h2>
-      <Link className="link" to="/" >Home</Link>
-      <Link className="link" to="/projects" >My projects</Link>
+      <h2>Hugh Sinclair</h2>
     </div>
   );
 }
@@ -65,8 +63,6 @@ export default function Navbar() {
         <ProjectDropdown setIsDropdownVisible={setIsDropdownVisible} isDropdownVisible={isDropdownVisible} icon={ <ExpandMoreIcon fontSize="small" />} />
         {isDropdownVisible && <DropdownList />}
       </div>
-      
-
     </div>
   );
 };
