@@ -1,8 +1,10 @@
 import './Aboutstyle.css';
 import Typical from 'react-typical'
-
-
-
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
+import {Icon} from '@iconify/react'
 
 const AboutMe = () => {
 
@@ -18,13 +20,35 @@ const AboutMe = () => {
   );
 }
 
+const Skills = () => {
 
-export default function Home() {
+  return (
+    <div className="skills">
+      <h2>My tech stack includes:</h2>
+      <ul>
+        <li><Icon icon="cib:html5" color="white"/> HTML</li>
+        <li><Icon icon="cib:css3-shiled" color="white" /> CSS</li>
+        <li><Icon icon="cib:javascript" color="white" /> Javascript</li>
+        <li><Icon icon="la:node-js" color="white" /> NodeJS</li>
+        <li><Icon icon="simple-icons:googlemaps" color="white" /> Google maps API</li>
+        <li><Icon icon="teenyicons:ruby-outline" color="white" />  Ruby</li>
+        <li><Icon icon="cib:postgresql" color="white" /> PostgreSQL</li>
+        <li></li>
+      </ul>
+    </div>
+  )
+}
+
+
+export default function About() {
   
   
 
 
   return (
-   <AboutMe /> 
+    <>
+      <AboutMe /> 
+      <Skills />
+   </>
   );
 }

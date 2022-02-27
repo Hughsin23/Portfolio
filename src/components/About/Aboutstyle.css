@@ -9,6 +9,9 @@ h1, h2 {
     align-items: center;
     flex-grow: inherit;
     background-color: #23acfd;
-    height: calc(100vh - 60px);
-
+    
+}
+.skills {
+    background-color: #23acfd;
+    color: white;
 }

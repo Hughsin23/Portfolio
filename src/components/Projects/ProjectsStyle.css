@@ -64,6 +64,15 @@ p > a {
         width: 55vw;
         border-radius: 10px;
     }
+    .project-container{
+        background-color: #23acfd;
+        width: 100vw;
+        height: calc(100vh - 60px); /* maths is fun */ 
+        display: grid;
+        grid-template-columns: 1fr 3.5fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+
 }
 @media only screen and (min-width: 1500px){
     .tictactoe-img {

@@ -3,12 +3,8 @@ import { useState } from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {Link} from 'react-router-dom'
+import EmailIcon from '@mui/icons-material/Email';
 
-const linkStyle = {
-  borderRadius: '7px',
-  backgroundColor: ''
-}
 
 const Logo = () => {
   return (
@@ -58,6 +54,7 @@ export default function Navbar() {
     <div className='navbar-container'>
       <Logo />
       <div className="links">
+        <NavLink url="mailto:hughsin23@gmail.com" text="Email me!" icon={<EmailIcon />}/>
         <NavLink url="https://github.com/Hughsin23" text="Github" icon={<GitHubIcon />}/>
         <NavLink url="https://www.linkedin.com/in/hsinclair23/" text="LinkedIn" icon={<LinkedInIcon />}/>
         <ProjectDropdown setIsDropdownVisible={setIsDropdownVisible} isDropdownVisible={isDropdownVisible} icon={ <ExpandMoreIcon fontSize="small" />} />

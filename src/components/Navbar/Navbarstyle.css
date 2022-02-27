@@ -50,7 +50,6 @@ a, .link {
     top: 60px;
     border-top: 1px solid #fafafa;
     box-shadow: 4px 8px 8px -4px rgba(139,161,199,0.75);
-
 }
 
 .projects-list{
@@ -65,4 +64,22 @@ a, .link {
 
 .links > svg {
     color: #fafafa;
+}
+
+@media only screen and (max-width: 601px) {
+    .navbar-container {
+        position: sticky;
+        flex-direction: column;
+        height: 90px;
+        padding-bottom: 10px;
+    }
+    .links-dropdown {
+        position: absolute;
+        background-color: #2067e3;
+        right: 0;
+        top: 90px;
+        border-top: 1px solid #fafafa;
+        box-shadow: 4px 8px 8px -4px rgba(139,161,199,0.75);
+    }
+
 }
