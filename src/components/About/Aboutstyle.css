@@ -1,7 +1,9 @@
 h1, h2 {
     color: whitesmoke;
 }
-
+.skills-ul{
+    text-align: center;
+}
 
 .about-me {
     display: flex;
@@ -14,4 +16,17 @@ h1, h2 {
 .skills {
     background-color: #23acfd;
     color: white;
+    padding-top: 10%;
+}
+.about-container{
+    height: calc(100vh + 60px);
+    background-color: #23acfd;
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container{
+        padding-top: 85px;
+        height: calc(100vh + 80px);
+    }
 }

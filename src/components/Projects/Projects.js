@@ -17,7 +17,8 @@ export default function Projects() {
                 speed={2.5}
                 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column',  }}>
                 <img className="tictactoe-img" src={ticTacToeImg} alt="" />
-                <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
+                <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Tic-tac-toe. Try it <a target="_blank" href="https://hughsin23.github.io/tic-tac-toe/">here</a></p>
+                <p className="project-p">Scroll down for more v</p>
                 </ParallaxLayer>
 
                 
@@ -35,7 +36,7 @@ export default function Projects() {
                     
                 }}>
                     <img src={showUsYourQuackImg} alt="" />
-                    <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Show us your Quack! A duckspotting CRUD app! Try it <a target="_blank" href="https://show-us-your-quack.herokuapp.com/">here</a></p>
+                    <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Show us your Quack! A duckspotting CRUD app! Try it <a target="_blank" href="https://show-us-your-quack.herokuapp.com/">here</a></p>
                 </ParallaxLayer>
 
                 <ParallaxLayer
@@ -50,7 +51,7 @@ export default function Projects() {
                     backgroundColor: '#3044FA'
                 }}>
                 <img className="safehaven-img" src={safeHavenImg} alt="" />
-                <p style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Group project: Safehaven, a full stack safety app for women. Try it <a target="_blank" href="https://safe-haven-app.herokuapp.com/">here</a></p>
+                <p className="project-p" style={{ borderRadius: '10px', width: '300px', backgroundColor: '#4120e3', color: 'white', textAlign: 'center' }}>Group project: Safehaven, a full stack safety app for women. Try it <a target="_blank" href="https://safe-haven-app.herokuapp.com/">here</a></p>
                 </ParallaxLayer>
             </Parallax>
             </div>

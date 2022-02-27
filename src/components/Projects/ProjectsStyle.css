@@ -42,13 +42,7 @@ img {
     border-radius: 10px;
 }
 
-p {
-    border-radius: '10px';
-    width: '300px';
-    background-color: '#4120e3';
-    color: 'white';
-    text-align: 'center';
-}
+
 p > a {
     text-decoration: underline;
 }
@@ -61,7 +55,7 @@ p > a {
         width: 60vw;
     }
     .safehaven-img {
-        width: 55vw;
+        width: 50%;
         border-radius: 10px;
     }
     .project-container{
@@ -69,7 +63,7 @@ p > a {
         width: 100vw;
         height: calc(100vh - 60px); /* maths is fun */ 
         display: grid;
-        grid-template-columns: 1fr 3.5fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
         grid-template-rows: 1fr 5fr 1fr;
     }
 

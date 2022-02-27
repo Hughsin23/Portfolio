@@ -14,14 +14,14 @@ const Logo = () => {
   );
 }
 
-const NavLink = ({url, text, icon = null}) => {
+const NavLink = ({url, text, icon = null, className = null}) => {
   return (
     <>
-      {icon}
-      <a target="_blank" href={url}>{icon, text}</a>
+      <a className="nav-links" target="_blank" href={url}>{icon}<span className={className}>{text}</span></a>
     </>
     )
-} 
+}
+
 
 
 
@@ -54,9 +54,9 @@ export default function Navbar() {
     <div className='navbar-container'>
       <Logo />
       <div className="links">
-        <NavLink url="mailto:hughsin23@gmail.com" text="Email me!" icon={<EmailIcon />}/>
-        <NavLink url="https://github.com/Hughsin23" text="Github" icon={<GitHubIcon />}/>
-        <NavLink url="https://www.linkedin.com/in/hsinclair23/" text="LinkedIn" icon={<LinkedInIcon />}/>
+        <NavLink className="link-text" url="mailto:hughsin23@gmail.com" text="Email me!" icon={<EmailIcon />}/>
+        <NavLink className="link-text" url="https://github.com/Hughsin23" text="Github" icon={<GitHubIcon />}/>
+        <NavLink className="link-text" url="https://www.linkedin.com/in/hsinclair23/" text="LinkedIn" icon={<LinkedInIcon />}/>
         <ProjectDropdown setIsDropdownVisible={setIsDropdownVisible} isDropdownVisible={isDropdownVisible} icon={ <ExpandMoreIcon fontSize="small" />} />
         {isDropdownVisible && <DropdownList />}
       </div>

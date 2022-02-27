@@ -24,8 +24,8 @@ const Skills = () => {
 
   return (
     <div className="skills">
-      <h2>My tech stack includes:</h2>
-      <ul>
+      <h2 className="skills-ul">My tech skills include:</h2>
+      <ul className="skills-ul">
         <li><Icon icon="cib:html5" color="white"/> HTML</li>
         <li><Icon icon="cib:css3-shiled" color="white" /> CSS</li>
         <li><Icon icon="cib:javascript" color="white" /> Javascript</li>
@@ -33,7 +33,7 @@ const Skills = () => {
         <li><Icon icon="simple-icons:googlemaps" color="white" /> Google maps API</li>
         <li><Icon icon="teenyicons:ruby-outline" color="white" />  Ruby</li>
         <li><Icon icon="cib:postgresql" color="white" /> PostgreSQL</li>
-        <li></li>
+        <li><Icon icon="cib:react" color="white" /> React</li>
       </ul>
     </div>
   )
@@ -46,9 +46,9 @@ export default function About() {
 
 
   return (
-    <>
+    <div className="about-container">
       <AboutMe /> 
       <Skills />
-   </>
+   </div>
   );
 }

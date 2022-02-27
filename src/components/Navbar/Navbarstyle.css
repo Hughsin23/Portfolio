@@ -2,11 +2,12 @@
     display: flex;
     width: 100%;
     height: 60px;
-    position: sticky; /* 'sticks' the element where it's rendered, doesn't let it move, so because we're making this at the top it'll stick to the top */
+    position: fixed;
     padding-bottom: 10px;
     background-color: #2067e3;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .links {
@@ -19,10 +20,11 @@ li {
     padding: 8px;
 }
 
-a, .link {
+.nav-links {
     text-decoration: none;
     padding: 5px;
     border-radius: 7px;
+    display: flex;
 }
 
 .link {
@@ -68,10 +70,16 @@ a, .link {
 
 @media only screen and (max-width: 601px) {
     .navbar-container {
-        position: sticky;
+        position: fixed;
         flex-direction: column;
         height: 90px;
         padding-bottom: 10px;
+    }
+    .link-text {
+        display: none;
+    }
+    .nav-links {
+        padding: 20px;
     }
     .links-dropdown {
         position: absolute;
@@ -81,5 +89,4 @@ a, .link {
         border-top: 1px solid #fafafa;
         box-shadow: 4px 8px 8px -4px rgba(139,161,199,0.75);
     }
-
 }
