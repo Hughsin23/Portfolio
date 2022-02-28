@@ -7,7 +7,7 @@
     background-color: #2067e3;
     align-items: center;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 999; /* this is so the typing animation doesn't go through my navbar when you scroll up */
 }
 
 .links {

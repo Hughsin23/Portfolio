@@ -31,7 +31,7 @@ const Skills = () => {
         <li><Icon icon="cib:postgresql" color="white" /> PostgreSQL</li>
         <li><Icon icon="cib:react" color="white" /> React</li>
       </ul>
-      <h2 className='resume-title'><a href=""></a> <Icon icon="carbon:document" color="white" /> Take a peek at my resume</h2>
+      <h2 className='resume-title'><a href="../../resume.pdf" target="_blank"><Icon icon="carbon:document" color="white" /> Take a peek at my resume</a></h2>
       <h2 
         className='scroll-down'>Keep scrolling to see my projects <Icon icon="akar-icons:arrow-down" color="white" />
       </h2>

@@ -1,9 +1,8 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
-import Projects from './components/Projects/Projects'
+import Navbar from './components/Navbar/Navbar.js'
+import Projects from './components/Projects/Projects.js'
 import About from "./components/About/About.js"
-import Flipcard from "./components/project_flipcards/Flipcards"
-
+import Footer from "./components/Footer/Footer.js"
 const _ = require('lodash')
 
 
@@ -21,6 +20,7 @@ function App() {
       <Navbar />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 }

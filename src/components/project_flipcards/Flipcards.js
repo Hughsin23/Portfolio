@@ -6,9 +6,8 @@ import ReactCardFlip from 'react-card-flip';
 export default function Flipcard ({projectName, img, stack, width}) { // img url for the front, project name, project tech stack for the back
     const [isFlipped, setIsFlipped] = useState(false);
 
-  console.log(img)
-  const handleClick = (event) => {
-    event.preventDefault();
+  
+  const handleClick = () => {
     setIsFlipped(!isFlipped);
   }
 
