@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
 import About from "./components/About/About.js"
+import Flipcard from "./components/project_flipcards/Flipcards"
 
 const _ = require('lodash')
 
