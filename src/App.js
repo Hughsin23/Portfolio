@@ -19,9 +19,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Flipcard projectName="tictactoe" />
-      {/* <About />
-      <Projects /> */}
+      <About />
+      <Projects />
     </div>
   );
 }

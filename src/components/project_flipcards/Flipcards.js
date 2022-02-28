@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import safeHavenImg from '../../safehaven.png'
-import ticTacToeImg from '../../tictactoe.png'
-import showUsYourQuackImg from '../../quack.png'
 
-export default function Flipcard ({ imgUrl, projectName, projectStack }) { // img url for the front, project name, project tech stack for the back
+
+
+export default function Flipcard ({projectName, img, stack, width}) { // img url for the front, project name, project tech stack for the back
     const [isFlipped, setIsFlipped] = useState(false);
 
-    console.log(projectName)
-
+  console.log(img)
   const handleClick = (event) => {
     event.preventDefault();
     setIsFlipped(!isFlipped);
@@ -17,34 +15,36 @@ export default function Flipcard ({ imgUrl, projectName, projectStack }) { // im
   
     const styles = {
       card: {
-        width: '250px' // this width, along with image width and the div style width all need to be the same for the flip to be working
+        width: `${width}vw`, // this width, along with image width and the div style width all need to be the same for the flip to be working, otherwise the axis goes all funky because the widths are diff
+        backgroundColor: "#4120e3",
+        borderRadius: "10px",
+        paddingLeft: "2px"
       },
       image: {
-        height: '200px',
-        width: '250px'
+        // height: '400px',
+        width: `${width}vw`
       }
     };
 
     return (
     <div style={{
-        paddingTop: '100px',
-        height: 285,
-	    width: 250
+        // paddingBottom: '10px',
+        height: 300,
+	      width: `${width}vw`
     }}>
       <ReactCardFlip isFlipped={isFlipped}>
         <div style={styles.card} onClick={handleClick}>
           <img
             style={styles.image}
-            src={imgUrl}
+            src={img}
           />
         </div>
 
-        <div style={styles.card} onClick={handleClick}>
+        <div  style={styles.card} onClick={handleClick}>
           <h2>{projectName}</h2>
           <h2>tech stack:</h2>
-          <ul>
-              <li>test</li>
-              {/* {projectStack.forEach(language => <li>${language}</li>)} */}
+          <ul style={{listStyleType: "none", color:"white"}}>
+              {stack.map(language => <li>{language}</li>)}
           </ul>
         </div>
       </ReactCardFlip>
